@@ -10,42 +10,42 @@
   <meta name="keywords" content="html, css, javascript">
   <meta name="author" content="Стас Басов">
 </head>
-<body>
+<body class="page">
   <header class="header">
-    <a href="#" class="header-link" lang="en">Stas Basov</a>
+    <a href="#" class="header__link" lang="en">Stas Basov</a>
   </header>
   <nav class="menu">
-    <a href="#" class="menu-link">Первые шаги в HTML и CSS</a>
-    <a href="#" class="menu-link">Библиотеки JavaScript</a>
-    <a href="#" class="menu-link">Практика HTML, CSS и JavaScript</a>
+    <a href="#" class="menu__link">Первые шаги в HTML и CSS</a>
+    <a href="#" class="menu__link">Библиотеки JavaScript</a>
+    <a href="#" class="menu__link">Практика HTML, CSS и JavaScript</a>
   </nav>
-  <main class="main">
-    <section class="flex-row">
-      <div class="project project_beginner project_music-album"></div>
-      <div class="project project_beginner project_design-principles"></div>
-    </section>
-    <section class="flex-row flex-row_reversed">
+  <main class="content">
+    <ul class="flex-row list">
+      <li class="project project_beginner project_music-album"></li>
+      <li class="project project_beginner project_design-principles"></li>
+    </ul>
+    <section class="flex-row list flex-row_reversed">
       <div class="flex-column flex-column_reversed">
         <div class="project project_frameworks project_p5">
-          <video class="project-video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video>
+          <video class="project__video" src="https://code.s3.yandex.net/web-code/like.mp4" autoplay muted loop></video>
         </div>
-        <div class="flex-row flex-row_frameworks-inner">
-          <div class="project project_frameworks project_slider"></div>
-          <div class="project project_frameworks project_reactive"></div>
-        </div>
+        <ul class="flex-row list flex-row_frameworks-inner">
+          <li class="project project_frameworks project_slider"></li>
+          <li class="project project_frameworks project_reactive"></li>
+        </ul>
       </div>
       <div class="project project_frameworks project_procrastinate">
-        <video class="project-video" src="https://code.s3.yandex.net/web-code/procrastinate.mov" autoplay muted loop></video>
+        <video class="project__video" src="https://code.s3.yandex.net/web-code/procrastinate.mov" autoplay muted loop></video>
       </div>
     </section>
-    <section class="flex-row">
-      <div class="project project_vanilla project_how-to-study"></div>
-      <div class="project project_vanilla project_across-russia"></div>
-      <div class="project project_vanilla project_mesto"></div>
-    </section>
-    </main>
+    <ul class="flex-row list">
+      <li class="project project_vanilla project_how-to-study"></li>
+      <li class="project project_vanilla project_across-russia"></li>
+      <li class="project project_vanilla project_mesto"></li>
+    </ul>
+  </main>
   <footer class="footer">
-    <div class="logo"></div>
+    <div class="footer__logo"></div>
   </footer>
 </body>
 </html>
