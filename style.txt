@@ -2,6 +2,20 @@
   font-family: 'Cormorant Garamond';
 }
 
+.page__menu {
+  margin: 40px auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.centered-block {
+  margin: auto;
+}
+
 .header {
   height: 95px;
   display: flex;
@@ -15,10 +29,6 @@
   color: #10191E;
 }
 
-.centered-block {
-  margin: auto;
-}
-
 .menu {
   display: flex;
   justify-content: center;
@@ -27,10 +37,7 @@
   flex-wrap: wrap;
   max-width: 1330px;
 	min-width: 1280px;
-}
-
-.page__menu {
-  margin: 40px auto;
+	margin: 40px auto;
 }
 
 .menu__link {
@@ -40,25 +47,29 @@
   margin-right: 20px;
 }
 
+.menu__link:last-of-type {
+  margin-right: 0;
+}
+
 .menu__link_active {
   text-decoration: underline;
 }
 
 .content {
-  max-width: 1330px;
-  min-width: 1280px;
+	max-width: 1330px;
+	min-width: 1280px;
+}
+
+.content__title {
+  font-size: 34px;
+  margin: 0 0 40px;
+  text-align: center;
 }
 
 .flex-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .flex-row_reversed {
@@ -87,24 +98,32 @@
   width: 636px;
 }
 
+.project_width_m {
+  width: 306px;
+}
+
 .project_height_xl {
   height: 557px;
+}
+
+.project_height_l {
+  height: 430px;
+}
+
+.project_height_m {
+  height: 290px;
 }
 
 .project_height_s {
   height: 240px;
 }
 
-.project__video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.project_name_music-album {
+  background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
 
-.content__title {
-  font-size: 34px;
-  margin: 0 0 40px;
-  text-align: center;
+.project_name_design-principles {
+  background-image: url(https://code.s3.yandex.net/web-code/design.png);
 }
 
 .project_name_slider {
@@ -120,14 +139,6 @@
   order: 3;
 }
 
-.project_width_m {
-  width: 306px;
-}
-
-.project_height_m {
-  height: 290px;
-}
-
 .project_name_across-russia {
   background-image: url(https://code.s3.yandex.net/web-code/across-russia.png);
   order: 2;
@@ -138,16 +149,31 @@
   order: 1;
 }
 
-.project_name_music-album {
-  background-image: url(https://code.s3.yandex.net/web-code/album.png);
+.project__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.project_height_l {
-  height: 430px;
-}
+.project__overlay {
+  background-color: rgba(0, 0, 100, 8);
+  height: 100%;
+  width: 100%; /* растянули ссылку во весь блок */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* выровняли текст по центру средствами flex */
+  text-decoration: none; /* убрали подчеркивание  */
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box; /* задали внутренний фокус элемента, чтобы контейнер не расширялся */
+  padding: 20px; /* отступ, чтобы текст не касался краёв */
+  opacity: 0;
+} 
 
-.project_name_design-principles {
-  background-image: url(https://code.s3.yandex.net/web-code/design.png);
+.project__overlay:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -167,3 +193,7 @@
   background-position: center;
   align-self: center;
 }
+
+
+
+
